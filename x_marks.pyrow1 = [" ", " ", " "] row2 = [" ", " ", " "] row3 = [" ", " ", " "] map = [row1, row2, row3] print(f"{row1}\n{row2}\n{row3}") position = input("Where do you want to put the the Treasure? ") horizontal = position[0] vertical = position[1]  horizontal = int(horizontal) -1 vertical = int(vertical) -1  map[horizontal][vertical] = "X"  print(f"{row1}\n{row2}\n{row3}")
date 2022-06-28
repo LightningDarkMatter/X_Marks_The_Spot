@@ -1,0 +1,15 @@
+row1 = [" ", " ", " "]
+row2 = [" ", " ", " "]
+row3 = [" ", " ", " "]
+map = [row1, row2, row3]
+print(f"{row1}\n{row2}\n{row3}")
+position = input("Where do you want to put the the Treasure? ")
+horizontal = position[0]
+vertical = position[1]
+
+horizontal = int(horizontal) -1
+vertical = int(vertical) -1
+
+map[horizontal][vertical] = "X"
+
+print(f"{row1}\n{row2}\n{row3}")
